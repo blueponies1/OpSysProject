@@ -10,3 +10,9 @@ class  Rand48(object):
 
     def seed(self):
         return self.seed
+
+x = 1000
+randnum = Rand48(seed = x)
+randnumber = randnum.drand48()
+seedval = randnum.seed()
+print(seedval)
